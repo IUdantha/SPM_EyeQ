@@ -1,0 +1,41 @@
+.camBtn {
+  color: white;
+  width: 250px;
+  height: 60px;
+  background-color: rgb(255, 0, 251);
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 120px;
+  right: 0;
+}
+
+.testBtn {
+  color: white;
+  width: 250px;
+  height: 60px;
+  background-color: green;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 60px;
+  right: 0;
+}
+
+.vResultBtn {
+  color: white;
+  width: 250px;
+  height: 60px;
+  background-color: blue;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
