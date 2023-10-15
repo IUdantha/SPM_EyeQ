@@ -1,0 +1,76 @@
+.cardContainer {
+  border: 2px solid rgb(0, 157, 255);
+  border-radius: 20px;
+  box-shadow: -8px 6px 5px 0px rgba(213, 213, 213, 0.67);
+  -webkit-box-shadow: -8px 6px 5px 0px rgba(213, 213, 213, 0.67);
+  -moz-box-shadow: -8px 6px 5px 0px rgba(213, 213, 213, 0.67);
+  padding: 20px;
+  margin-top: 30px;
+  display: flex;
+  height: auto;
+  width: auto;
+  flex-direction: row;
+  position: relative;
+}
+
+.cardImage {
+}
+
+.cardInfo {
+  padding: 10px;
+}
+
+.cardInfo .fromHospital {
+  text-align: right;
+  color: gray;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cardInfo .byDoctor {
+  font-size: 25px;
+  font-weight: bold;
+  width: 300px;
+}
+
+.fromHospital {
+  font-size: 20px;
+  color: rgb(134, 133, 133);
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.preDate,
+.expDate,
+.preTo {
+  margin-bottom: 0px;
+  font-size: 13px;
+  color: rgb(98, 96, 96);
+  font-weight: 520;
+  padding: 2px;
+  width: fit-content;
+}
+
+.btnView {
+  width: 100%;
+  margin: 0px 0px;
+  margin-top: 20px;
+  padding: 2px 5px;
+  font-size: smaller;
+  border: 1px solid dodgerblue;
+  border-radius: 5px;
+  background-color: rgb(15, 112, 202);
+  color: white;
+}
+
+.btnView:hover {
+  border: 2px solid rgb(11, 131, 205);
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  color: rgb(43, 96, 253);
+}

@@ -1,50 +1,75 @@
-import React, { useState } from "react"; 
-import Stepper from "../components/Stepper";
-import StepperControl from "../components/StepperControl";
-import Details from "./Details";
-import Final from "./Final";
-import Account from "./Account";
+import React from "react";
+// import Layout from "../../../components/Layout";
+import card1Image from "../images/d1.jpg";
+import card2Image from "../images/d2.jpg";
+import card3Image from "../images/d3.jpg";
+import card4Image from "../images/d4.jpg";
+import card5Image from "../images/d5.jpg";
+import card6Image from "../images/d6.jpg";
+import { Link } from "react-router-dom";
 
-
-const ReservationFun = () => {
-
-  const [currentStep,setCurrentStep] = useState(1);
-
-  const steps = [
-
-    "Account information",
-    "Personal information",
-    "complete"
-
+export const ReservationFun = () => {
+  // Create an array of data for your cards with different images
+  const cardData = [
+    {
+      title: "Dr. John Doe -Ophthalmologist",
+      category: "Make an Appointment",
+      description: "Specializes in eye care and vision health.",
+      image: card1Image,
+    },
+    {
+      title: "Dr. Jane Smith -Optometrist",
+      category: "Make an Appointment",
+      description: "Provides comprehensive eye exams and eyeglass fittings.",
+      image: card2Image,
+    },
+    {
+      title: "Dr. Ann Johnson -Ophthalmologist",
+      category: "Make an Appointment",
+      description: "Specializes in eye care for children and adolescents.",
+      image: card3Image,
+    },
+    {
+      title: "Dr. Sarah Adams - Cornea Specialist",
+      category: "Make an Appointment",
+      description: "Focuses on cornea-related eye conditions and surgeries.",
+      image: card4Image,
+    },
+    {
+      title: "Dr. Robert White -Glaucoma Specialist",
+      category: "Make an Appointment",
+      description: "Specializes in the management of glaucoma patients.",
+      image: card5Image,
+    },
+    {
+      title: "Dr. Emily Davis-Retina Specialist",
+      category: "Make an Appointment",
+      description: "Expert in diagnosing and treating retinal diseases.",
+      image: card6Image,
+    },
   ];
-
-  const displayStep =(step) =>{
-
-    switch(step){
-
-      case 1:
-        return <Account/>
-        case 2:
-        return <Details/>
-        case 3:
-        return <Final/>
-    }
-  }
   return (
-    <>
-      <div className=" md:w-1/2 mx-auto shadow-xl rounded-2xl pb-2 bg-slate-400">
+    <div className="mx-auto max-w-screen-xl my-12">
+      <div className="grid grid-cols-3 gap-4">
+        {cardData.map((card, index) => (
+          <div key={index} className="bg-white rounded-md shadow-md">
+            <div className="flex justify-center p-4">
+              <img className="rounded-md" src={card.image} alt="Prescription" />
+            </div>
+            <div className="p-4">
+              <h2 className="font-semibold text-lg">{card.title}</h2>
+              <Link to="/Aform">
+                <button className="bg-blue-500 text-white px-2 py-1 rounded-full text-xs my-1">
+                  {card.category}
+                </button>
+              </Link>
 
-        <div className=" container mt-5">
-          <Stepper
-          
-          step = {steps}
-          currentStep ={currentStep}
-          />
-        </div>
-
-        <StepperControl/>
+              <p className="text-xs mt-1">{card.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 

@@ -1,0 +1,21 @@
+.formContent {
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid white;
+  border-radius: 10px;
+  box-shadow: -6px 4px 20px 0px rgba(119, 119, 119, 0.65);
+  -webkit-box-shadow: -6px 4px 20px 0px rgba(119, 119, 119, 0.65);
+  -moz-box-shadow: -6px 4px 20px 0px rgba(119, 119, 119, 0.65);
+}
+
+.headerImage {
+  padding: 10px;
+}
+
+img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.modalBack {
+  background-color: rgb(255, 255, 255);
+}

@@ -1,0 +1,71 @@
+.contentDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.imageDisplay {
+  display: flex;
+  justify-content: center;
+  border: 3px dashed #ccc;
+  border-radius: 10px;
+  margin-right: 200px;
+  text-align: center;
+  min-height: 400px;
+}
+
+.divider {
+  font-size: 100px;
+  font-weight: 100;
+  position: relative;
+}
+
+#divider2 {
+  position: absolute;
+  left: 450px;
+  top: 150px;
+}
+
+#divider1 {
+  position: absolute;
+  left: 450px;
+  top: 500px;
+}
+
+.dividerInfo {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  left: 370px;
+  top: 300px;
+  text-align: center;
+  justify-content: center;
+}
+
+/* ---- buttons ----- */
+.buttonDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 250px;
+}
+
+.btnFill,
+.btnUpload {
+  background-color: rgb(255, 255, 255);
+  color: rgb(10, 61, 96);
+  font-weight: 600;
+  padding: 3px;
+  width: 100px;
+  border: 2px solid rgb(3, 66, 88);
+  border-radius: 5px;
+}
+
+/* Upload.css */
+.disabled-button {
+  background-color: #ccc; /* Set the background color for when button disabled  */
+  color: #666; /* Set the text color for disabled button */
+  cursor: not-allowed; /* Change cursor to not-allowed for disabled button */
+  /* Add any other styling you want for the disabled button */
+  border: 2px solid grey;
+}

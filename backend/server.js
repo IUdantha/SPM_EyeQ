@@ -12,7 +12,11 @@ const HttpError = require("./user/models/http-error");
 
 const app = express();
 
+app.use(express.urlencoded({extended: true}));
 app.use(bodyParser.json());
+
+const cors = require("cors");
+app.use(cors());
 
 //give access to localhost 3000 to 5000 (to different domain)
 app.use((req, res, next) => {
@@ -30,11 +34,29 @@ app.use((req, res, next) => {
 app.use("/api/users", usersRoutes);
 
 // revervation fun
+// Reservation fun
+const DocRouter = require("./functions/reservationFun/routers/docRoutes");
+app.use("/doc", DocRouter);
+
+const AppRouter = require("./functions/reservationFun/routers/appointment");
+app.use("/app", AppRouter);
+
+const PRoute = require("./functions/reservationFun/routers/p");
+app.use("/payment", PRoute);
 
 //prescription fun
 
 //vTest fun
 app.use("/api/vTest", require("./functions/vTestFun/routers/TestResultRoutes"));
+
+// -------------- prescription fun ----------------
+//Crud Route
+const prescriptionRouter = require("./functions/prescriptionFun/routers/PrescriptionFormRouter");
+app.use("/prescriptionFun", prescriptionRouter);
+
+//OCR Route
+const ocrRouter = require("./functions/prescriptionFun/controllers/UploadController");
+app.use("/api/ocr", ocrRouter);
 
 //eBlink fun
 
