@@ -1,0 +1,142 @@
+input[type="text"]:focus ~ .input-text,
+input[type="date"]:focus ~ .input-text {
+  @apply text-lg text-black scale-75 translate-x-0 -translate-y-4 bg-white;
+}
+
+body {
+  margin: auto;
+}
+
+.header-add-form {
+  /* background-image: url("./back1.jpg"); */
+  /* background-color: rgb(0, 0, 119); */
+  padding: 10px;
+  height: 50px;
+  width: auto;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.add-form-header-image {
+  /* background-image: url("./bannerHeader.jpg"); */
+  flex: 1.35;
+}
+
+.add-form-header-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.add-form-header-title {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: #040463;
+  font-size: 30px;
+  font-weight: bold;
+  flex: 1;
+  /* background-color: rgba(105, 105, 225, 0.293); */
+}
+
+.add-form-header-title h1{
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(158, 158, 163); 
+
+}
+
+.mainAddForm {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 10px;
+}
+
+.add-form-column-right {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
+.add-form-column-left {
+  flex: 1.2;
+  margin-left: 30px;
+}
+
+.content-add-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.prescription-header {
+  height: 200px;
+  background-color: rgb(1, 141, 215);
+  color: white;
+  position: relative;
+}
+
+.heading {
+  text-align: center;
+  padding-top: 100px;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+/* .btn-Add {
+  position: absolute;
+  right: 50px;
+  top: 220px;
+  background-color: rgb(8, 52, 139);
+  width: 300px;
+  border: 1px solid rgb(10, 10, 212);
+  padding: 6px;
+  border-radius: 5px;
+}
+
+#newBtnAdd {
+  position: absolute;
+  right: 400px;
+  top: 300px;
+  background-color: rgb(8, 52, 139);
+  color: white;
+  width: 300px;
+  border: 1px solid rgb(10, 10, 212);
+  padding: 6px;
+  border-radius: 5px;
+} */
+
+.btn-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#btnPrevious{
+  background-color: rgb(23, 108, 255);
+  padding: 5px;
+  width: 400px;
+  color: white;
+  border-radius: 5px;
+  
+}
+
+#btnSubmit{
+  background-color: rgb(8, 39, 91);
+  padding: 5px;
+  width: 400px;
+  color: white;
+  border-radius: 5px;
+}
+
+.pres-info textarea {
+  border: 2px solid rgb(167, 162, 162);
+  border-radius: 5px;
+  width: 183%;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
