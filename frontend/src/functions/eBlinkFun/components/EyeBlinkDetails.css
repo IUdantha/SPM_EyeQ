@@ -1,0 +1,97 @@
+.eTestDetails {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.eTestDetails p {
+  line-height: 2;
+  font-size: 24px;
+}
+
+/* styles.css */
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 2%;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Background color with transparency */
+  color: white;
+  padding: 10px;
+}
+
+.buttonE {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.buttonE span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonE span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonE:hover span {
+  padding-right: 25px;
+}
+
+.buttonE:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.eTestDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.eyeTestDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 18px;
+}
+
+.eyeTestDetails h1, .eyeTestDetails p, .eyeTestDetails h2, .eyeTestDetails h3 {
+  margin: 10px;
+}
+
+.eBlinktitle {
+  font-size: 36px;
+}

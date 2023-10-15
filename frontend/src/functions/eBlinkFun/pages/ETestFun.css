@@ -1,0 +1,27 @@
+.testBtn {
+  color: white;
+  width: 250px;
+  height: 60px;
+  background-color: green;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.eResultBtn {
+  color: white;
+  width: 250px;
+  height: 60px;
+  background-color: blue;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 60px;
+  right: 0;
+}

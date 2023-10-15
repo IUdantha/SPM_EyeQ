@@ -16,7 +16,7 @@ const NavLinks = (props) => {
       </li>
       {auth.isLoggedIn && (
         <li>
-          <NavLink to="/eBlinkFun">Eye Test</NavLink>
+          <NavLink to="/ETestFun">Eye Blink Test</NavLink>
         </li>
       )}
       {auth.isLoggedIn && (
