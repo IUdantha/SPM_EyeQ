@@ -14,7 +14,8 @@ https://www.canva.com/design/DAFqOjXGwO8/ewdY49IXcH9MYpiyD58N1Q/edit?utm_content
 
 Run in root folder(EyeQ) for windows: "py -3 -m venv .myenv"(for windows) for macOS: "python3 -m venv .myenv"
 
-To activate the corresponding environment: for windows: ".myenv\Scripts\activate" for macOS: ". .venv/bin/activate"
+To activate the corresponding environment: for windows: "source myenv/bin/activate
+" for macOS: "source .myenv/bin/activate"
 
 Then shell prompt will change to show the name of the activated environment(which is .myenv).
 

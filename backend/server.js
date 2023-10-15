@@ -12,7 +12,11 @@ const HttpError = require("./user/models/http-error");
 
 const app = express();
 
+app.use(express.urlencoded({extended: true}));
 app.use(bodyParser.json());
+
+const cors = require("cors");
+app.use(cors());
 
 //give access to localhost 3000 to 5000 (to different domain)
 app.use((req, res, next) => {
@@ -67,7 +71,7 @@ app.use((error, req, res, next) => {
     return next(error);
   }
   res.status(error.code || 500);
-  res.json({ message: error.message || "An unknown error occurred!" });
+  res.json({message: error.message || "An unknown error occurred!"});
 });
 
 app.listen(5000, () => console.log(`Server started on port ${port}`));

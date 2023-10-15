@@ -12,7 +12,7 @@ router.post("/addA", async (req, res) => {
     console.error("Error creating appointment:", error); // Log the error
     res
       .status(500)
-      .json({ error: "An error occurred while creating the appointment." });
+      .json({error: "An error occurred while creating the appointment."});
   }
 });
 
@@ -24,7 +24,7 @@ router.get("/getA", async (req, res) => {
   } catch (error) {
     res
       .status(500)
-      .json({ error: "An error occurred while fetching appointments." });
+      .json({error: "An error occurred while fetching appointments."});
   }
 });
 
@@ -33,34 +33,34 @@ router.get("/getA/:appointmentId", async (req, res) => {
   try {
     const appointment = await Appointment.findById(req.params.appointmentId);
     if (!appointment) {
-      return res.status(404).json({ error: "Appointment not found" });
+      return res.status(404).json({error: "Appointment not found"});
     }
     res.json(appointment);
   } catch (error) {
     res
       .status(500)
-      .json({ error: "An error occurred while fetching the appointment." });
+      .json({error: "An error occurred while fetching the appointment."});
   }
 });
 
 // Update a specific appointment by ID
-router.put("/update/:appointmentId", async (req, res) => {
+router.patch("/update/:appointmentId", async (req, res) => {
   try {
     const updatedAppointment = await Appointment.findByIdAndUpdate(
       req.params.appointmentId,
       req.body,
-      { new: true } // Return the updated appointment
+      {new: true} // Return the updated appointment
     );
 
     if (!updatedAppointment) {
-      return res.status(404).json({ error: "Appointment not found" });
+      return res.status(404).json({error: "Appointment not found"});
     }
 
     res.json(updatedAppointment);
   } catch (error) {
     res
       .status(500)
-      .json({ error: "An error occurred while updating the appointment." });
+      .json({error: "An error occurred while updating the appointment."});
   }
 });
 
@@ -72,14 +72,14 @@ router.delete("/delete/:appointmentId", async (req, res) => {
     );
 
     if (!deletedAppointment) {
-      return res.status(404).json({ error: "Appointment not found" });
+      return res.status(404).json({error: "Appointment not found"});
     }
 
     res.json(deletedAppointment);
   } catch (error) {
     res
       .status(500)
-      .json({ error: "An error occurred while deleting the appointment." });
+      .json({error: "An error occurred while deleting the appointment."});
   }
 });
 

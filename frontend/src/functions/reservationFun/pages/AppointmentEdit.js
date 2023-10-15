@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Link, useHistory, useParams } from "react-router-dom";
+import React, {useState, useEffect} from "react";
+import {Link, useHistory, useParams} from "react-router-dom";
 
 export const AppointmentEdit = () => {
   const [appointment, setAppointment] = useState({});
@@ -15,7 +15,7 @@ export const AppointmentEdit = () => {
   const [loading, setLoading] = useState(true);
 
   const history = useHistory();
-  const { id } = useParams(); // Get the ID parameter from the URL.
+  const {id} = useParams(); // Get the ID parameter from the URL.
 
   useEffect(() => {
     const fetchAppointment = async () => {
@@ -91,7 +91,7 @@ export const AppointmentEdit = () => {
 
     // Send the updated data to the server
     const response = await fetch(`http://localhost:5000/app/update/${id}`, {
-      method: "PUT",
+      method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },
