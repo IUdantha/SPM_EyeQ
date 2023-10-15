@@ -45,6 +45,15 @@ app.use("/payment", PRoute);
 //vTest fun
 app.use("/api/vTest", require("./functions/vTestFun/routers/TestResultRoutes"));
 
+// -------------- prescription fun ----------------
+//Crud Route
+const prescriptionRouter = require("./functions/prescriptionFun/routers/PrescriptionFormRouter");
+app.use("/prescriptionFun", prescriptionRouter);
+
+//OCR Route
+const ocrRouter = require("./functions/prescriptionFun/controllers/UploadController");
+app.use("/api/ocr", ocrRouter);
+
 //eBlink fun
 
 //common
