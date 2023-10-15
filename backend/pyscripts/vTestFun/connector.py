@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/run_script', methods=['POST'])
 def run_script():
-    script_path = os.path.join(os.path.dirname(__file__), "HandTrackingModule.py")
+    script_path = os.path.join(os.path.dirname(__file__), "HandDistance.py")
     subprocess.run([sys.executable, script_path])
     return "Script started"
 
