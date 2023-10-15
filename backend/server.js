@@ -36,6 +36,15 @@ app.use("/api/users", usersRoutes);
 //vTest fun
 app.use("/api/vTest", require("./functions/vTestFun/routers/TestResultRoutes"));
 
+// -------------- prescription fun ----------------
+//Crud Route
+const prescriptionRouter = require("./functions/prescriptionFun/routers/PrescriptionFormRouter");
+app.use("/prescriptionFun", prescriptionRouter);
+
+//OCR Route
+const ocrRouter = require("./functions/prescriptionFun/controllers/UploadController");
+app.use("/api/ocr", ocrRouter);
+
 //eBlink fun
 
 //common
@@ -49,7 +58,7 @@ app.use((error, req, res, next) => {
     return next(error);
   }
   res.status(error.code || 500);
-  res.json({message: error.message || "An unknown error occurred!"});
+  res.json({ message: error.message || "An unknown error occurred!" });
 });
 
 app.listen(5000, () => console.log(`Server started on port ${port}`));

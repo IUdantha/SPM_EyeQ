@@ -1,0 +1,85 @@
+input[type="text"]:focus ~ .input-text,
+input[type="date"]:focus ~ .input-text {
+  @apply text-lg text-black scale-75 translate-x-0 -translate-y-4 bg-white;
+}
+
+.prescription-header {
+  height: 250px;
+  position: relative;
+  background-image: url(../images/editBack.jpg);
+  background-repeat: no-repeat;
+}
+
+.heading {
+  padding-top: 100px;
+  text-align: center;
+  padding-right: 135px;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  font-size: 40px;
+  float: right;
+}
+
+.btn-Add {
+  position: absolute;
+  right: 50px;
+  top: 220px;
+  background-color: rgb(8, 52, 139);
+  width: 300px;
+  border: 1px solid rgb(10, 10, 212);
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.patient-info .divTitle,
+.doctor-info .divTitle,
+.prescription-info .divTitle {
+  border-bottom: 2px solid #898b8f;
+  width: 180px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+#newBtnAddPres {
+  position: absolute;
+  right: 130px;
+  top: 300px;
+  background-color: rgb(10, 53, 102);
+  color: white;
+  width: 300px;
+  height: 40px;
+  border: 1px solid rgb(10, 10, 212);
+  padding: 6px;
+  border-radius: 5px;
+}
+
+/* ----------------- Styles for Search bar ---------------- */
+#search-bar {
+  padding: 10px;
+  padding-left: 50px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-left: 130px;
+  border: 3px solid #007bff;
+  border-radius: 20px;
+  width: 900px;
+  height: 40px;
+  /* Add any additional styles you want */
+  background-color: #f0f0f0;
+  font-size: 16px;
+  color: #333;
+  position: relative;
+}
+
+/*  style the search bar when it's focused */
+#search-bar:focus {
+  border: 1px solid #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#searchIcon {
+  width: 40px;
+  position: absolute;
+  left: 990px;
+  top: 300px;
+}

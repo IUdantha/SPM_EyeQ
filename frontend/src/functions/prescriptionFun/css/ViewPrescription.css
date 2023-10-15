@@ -1,0 +1,221 @@
+/* Styles for the modal overlay */
+.ReactModal__Overlay {
+  z-index: 1000; /* Ensure it's above other elements */
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+
+/* Styles for the modal content */
+.ReactModal__Content {
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(4, 80, 135, 0.6);
+  max-width: 100%;
+  max-height: 95%;
+
+  margin: 0px 250px;
+}
+
+.detailContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 90%;
+  padding: 10px 20px 0px 20px;
+}
+
+.detailContainer input {
+  background-color: white;
+  border: none;
+}
+
+/* .conHeader {
+  background-color: aqua;
+} */
+
+.mainHeader {
+  height: 15px;
+  background-color: rgb(19, 139, 232);
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.left .conHeader {
+  flex: 2.5;
+}
+
+.left .conUp {
+  margin-top: 40px;
+  flex: 4;
+}
+
+.left .conDown {
+  margin-top: 20px;
+  flex: 3;
+}
+
+.right {
+  width: 100%;
+  height: 90%;
+  flex: 2;
+  margin-left: 50px;
+}
+
+.prescriptionTable {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+  height: 60%;
+}
+
+/* .prescriptionTable input {
+  border: none;
+} */
+
+.conMiddleRow {
+  border: 2px solid rgb(21, 162, 233);
+
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin-top: 20px;
+}
+
+.additionalInfo {
+  margin-top: 30px;
+}
+
+.detailContainer .conHeader h1 {
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(0, 123, 223);
+}
+
+.detailContainer .conUp h2,
+.detailContainer .conDown h2,
+.detailContainer .right h2 {
+  font-weight: 600;
+  font-size: 15px;
+  border-bottom: 1px solid rgb(233, 233, 233);
+  padding-bottom: 5px;
+  width: 95%;
+}
+
+/* Patient Details, Doctor Details, Prescription Details - Headers */
+.conHeaders {
+  background-color: #f0f7ff;
+  color: darkblue;
+  padding: 5px;
+  border-bottom: 2px solid;
+  border-top-right-radius: "9px";
+  border-top-left-radius: "9px";
+  border-bottom: 2px solid #e4f1ff;
+}
+
+/* ---------- for rowDivs -------------*/
+.rowDivs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.rowDivs .rowDiv-Item {
+  margin-bottom: 3px;
+  position: relative;
+}
+
+.rowDivs .rowDiv-Item input {
+  margin-left: 30px;
+  position: absolute;
+  left: 110px;
+  top: 0px;
+}
+
+/* .additionalInfo{
+height: 50px;
+} */
+
+/* ---------- for colDivs -------------*/
+.colDivs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.colDivs .colDiv-Item h4 {
+  font-size: 14px;
+}
+
+.colDivs .colDiv-Item input {
+  text-align: center;
+  font-size: small;
+}
+
+/* button style */
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.buttons button {
+  padding: 2px 20px;
+  border: 1px solid white;
+  border-radius: 7px;
+  width: 100px;
+}
+.buttons .leftBtn {
+  flex: 2;
+  margin-left: 20px;
+}
+
+.buttons .rightBtn {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Button delete */
+.buttons #btnDelete {
+  background-color: rgb(224, 47, 47);
+  color: white;
+  margin-right: 17px;
+}
+
+#btnDelete :hover {
+  background-color: rgb(255, 255, 255);
+  color: red;
+  border: 1px solid red;
+}
+
+/* Button export */
+.buttons #btnExport {
+  background-color: rgb(23, 102, 120);
+  color: rgb(255, 255, 255);
+  margin-right: 10px;
+}
+
+#btnExport :hover {
+  background-color: rgb(122, 229, 227);
+  color: rgb(23, 102, 120);
+  border: 1px solid rgb(23, 102, 120);
+}
+
+/* Button Back */
+.buttons #btnBack {
+  background-color: rgb(37, 102, 200);
+  color: white;
+}
+
+/* Button Edit */
+.buttons #btnEdit {
+  background-color: rgb(70, 196, 2);
+  color: white;
+  margin-right: 10px;
+}

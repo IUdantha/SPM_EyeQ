@@ -1,4 +1,4 @@
-import React, {useState, useCallback} from "react";
+import React, { useState, useCallback } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -13,11 +13,11 @@ import PrescriptionFun from "./functions/prescriptionFun/pages/PrescriptionFun";
 import ReservationFun from "./functions/reservationFun/pages/ReservationFun";
 import VTestFun from "./functions/vTestFun/pages/VTestFun";
 import MainNavigation from "./common/components/Navigation/MainNavigation";
-import {AuthContext} from "./common/context/auth-context";
+import { AuthContext } from "./common/context/auth-context";
+import NewAddForm from "./functions/prescriptionFun/pages/NewAddForm";
 
 const App = () => {
-  
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
   const [userId, setUserId] = useState(false);
 
   const login = useCallback((uid) => {
@@ -43,6 +43,9 @@ const App = () => {
         </Route>
         <Route path="/PrescriptionFun">
           <PrescriptionFun />
+        </Route>
+        <Route path="/Pres/add">
+          <NewAddForm />
         </Route>
         <Route path="/ReservationFun">
           <ReservationFun />
