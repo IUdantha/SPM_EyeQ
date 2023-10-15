@@ -14,16 +14,14 @@ import ReservationFun from "./functions/reservationFun/pages/ReservationFun";
 import VTestFun from "./functions/vTestFun/pages/VTestFun";
 import MainNavigation from "./common/components/Navigation/MainNavigation";
 import { AuthContext } from "./common/context/auth-context";
-<<<<<<< HEAD
 import PaymentForm from "./functions/reservationFun/components/PaymentForm";
 import Success from "./functions/reservationFun/components/Success";
 import AppointmentTable from "./functions/reservationFun/pages/AppointmentTable";
 import AppointmentEdit from "./functions/reservationFun/pages/AppointmentEdit";
 import Aform from "./functions/reservationFun/pages/Aform";
 import DoctorList from "./functions/reservationFun/pages/DoctorDetails";
-=======
 import NewAddForm from "./functions/prescriptionFun/pages/NewAddForm";
->>>>>>> b8f8947b8752c96ec1b4bf96e075cc7a7a78ee37
+
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(true);

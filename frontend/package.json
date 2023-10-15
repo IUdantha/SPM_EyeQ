@@ -15,10 +15,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-modal": "^3.16.1",
-<<<<<<< HEAD
-=======
     "react-pdf": "^7.5.0",
->>>>>>> b8f8947b8752c96ec1b4bf96e075cc7a7a78ee37
     "react-router-dom": "^5.3.4",
     "react-scripts": "5.0.1",
     "react-toastify": "^9.1.3",
