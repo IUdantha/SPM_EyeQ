@@ -32,15 +32,15 @@ const eTestDetails = () => {
             </p>
             <p>
                 <h2><b>Blink Counter Normal Range</b></h2>
-                <h3>40 &lt; Normal &lt; 60</h3>
+                <h3>20 &lt; Normal &lt; 40</h3>
             </p>
             <p>
-                If your blink counter is less than the normal range (&lt; 40)
+                If your blink counter is less than the normal range (&lt; 20)
                 <br/>
                 Your condition is likely <b>HYPOBLINK</b>
             </p>
             <p>
-                If your blink counter is more than the normal range (&gt; 60)
+                If your blink counter is more than the normal range (&gt; 40)
                 <br/>
                 Your condition is likely <b>HYPERBLINK</b>
             </p>
