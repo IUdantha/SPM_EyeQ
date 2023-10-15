@@ -8,7 +8,7 @@ import {
 
 import Auth from "./user/pages/Auth";
 import Home from "./user/pages/Home";
-import EBlinkFun from "./functions/eBlinkFun/pages/EBlinkFun";
+import ETestFun from "./functions/eBlinkFun/pages/ETestFun";
 import PrescriptionFun from "./functions/prescriptionFun/pages/PrescriptionFun";
 import ReservationFun from "./functions/reservationFun/pages/ReservationFun";
 import VTestFun from "./functions/vTestFun/pages/VTestFun";
@@ -38,8 +38,8 @@ const App = () => {
         <Route path="/" exact>
           <Home />
         </Route>
-        <Route path="/EBlinkFun" exact>
-          <EBlinkFun />
+        <Route path="/ETestFun" exact>
+          <ETestFun />
         </Route>
         <Route path="/PrescriptionFun">
           <PrescriptionFun />
