@@ -30,6 +30,15 @@ app.use((req, res, next) => {
 app.use("/api/users", usersRoutes);
 
 // revervation fun
+// Reservation fun
+const DocRouter = require("./functions/reservationFun/routers/docRoutes");
+app.use("/doc", DocRouter);
+
+const AppRouter = require("./functions/reservationFun/routers/appointment");
+app.use("/app", AppRouter);
+
+const PRoute = require("./functions/reservationFun/routers/p");
+app.use("/payment", PRoute);
 
 //prescription fun
 
@@ -49,7 +58,7 @@ app.use((error, req, res, next) => {
     return next(error);
   }
   res.status(error.code || 500);
-  res.json({message: error.message || "An unknown error occurred!"});
+  res.json({ message: error.message || "An unknown error occurred!" });
 });
 
 app.listen(5000, () => console.log(`Server started on port ${port}`));

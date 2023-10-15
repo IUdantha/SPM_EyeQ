@@ -1,4 +1,4 @@
-import React, {useState, useCallback} from "react";
+import React, { useState, useCallback } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -13,11 +13,16 @@ import PrescriptionFun from "./functions/prescriptionFun/pages/PrescriptionFun";
 import ReservationFun from "./functions/reservationFun/pages/ReservationFun";
 import VTestFun from "./functions/vTestFun/pages/VTestFun";
 import MainNavigation from "./common/components/Navigation/MainNavigation";
-import {AuthContext} from "./common/context/auth-context";
+import { AuthContext } from "./common/context/auth-context";
+import PaymentForm from "./functions/reservationFun/components/PaymentForm";
+import Success from "./functions/reservationFun/components/Success";
+import AppointmentTable from "./functions/reservationFun/pages/AppointmentTable";
+import AppointmentEdit from "./functions/reservationFun/pages/AppointmentEdit";
+import Aform from "./functions/reservationFun/pages/Aform";
+import DoctorList from "./functions/reservationFun/pages/DoctorDetails";
 
 const App = () => {
-  
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
   const [userId, setUserId] = useState(false);
 
   const login = useCallback((uid) => {
@@ -50,6 +55,28 @@ const App = () => {
         <Route path="/VTestFun">
           <VTestFun />
         </Route>
+
+        <Route path="/Aform">
+          <Aform />
+        </Route>
+        <Route path="/Aedit/:id">
+          <AppointmentEdit />
+        </Route>
+
+        <Route path="/doctors">
+          <DoctorList />
+        </Route>
+        <Route path="/apptable">
+          <AppointmentTable />
+        </Route>
+
+        <Route path="/pp">
+          <PaymentForm />
+        </Route>
+        <Route path="/success">
+          <Success />
+        </Route>
+
         <Redirect to="/" />
       </Switch>
     );
