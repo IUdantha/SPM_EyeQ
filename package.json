@@ -15,7 +15,7 @@
   "dependencies": {
     "color": "^4.2.3",
     "concurrent": "^0.3.2",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.4.5"
   },
   "devDependencies": {
     "concurrently": "^8.2.0"
