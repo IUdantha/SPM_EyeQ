@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@react-pdf/renderer": "^3.1.13",
+    "@react-pdf/renderer": "^4.2.2",
     "@stripe/react-stripe-js": "^2.3.1",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
